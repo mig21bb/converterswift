@@ -22,25 +22,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="23" translatesAutoresizingMaskIntoConstraints="NO" id="yCj-vU-aDn">
-                                <rect key="frame" x="125" y="51" width="121" height="30"/>
+                                <rect key="frame" x="127" y="20" width="121" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TGO-AR-6Kc">
-                                <rect key="frame" x="125" y="131" width="121" height="30"/>
+                                <rect key="frame" x="127" y="71" width="121" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="9z5-6g-1Oq">
-                                <rect key="frame" x="34" y="213" width="307" height="31"/>
+                                <rect key="frame" x="34" y="109" width="307" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="moveSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="QmB-78-GlW"/>
+                                </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWu-iy-Fyi">
-                                <rect key="frame" x="159" y="297" width="46" height="30"/>
+                                <rect key="frame" x="166" y="156" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -48,24 +51,33 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2J-NL-Hqe">
-                                <rect key="frame" x="166" y="396" width="42" height="21"/>
+                                <rect key="frame" x="170" y="194" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grief-and-loss" translatesAutoresizingMaskIntoConstraints="NO" id="crK-Lz-yHF">
+                                <rect key="frame" x="67" y="240" width="240" height="209"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.48915834019999999" blue="0.50905822690000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
                         <outlet property="label" destination="Y2J-NL-Hqe" id="y53-mF-aC7"/>
+                        <outlet property="picture" destination="crK-Lz-yHF" id="n7u-V8-dv7"/>
+                        <outlet property="slider" destination="9z5-6g-1Oq" id="4sp-lz-nmS"/>
                         <outlet property="texto1" destination="yCj-vU-aDn" id="wrh-5M-sFd"/>
                         <outlet property="texto2" destination="TGO-AR-6Kc" id="AoJ-qA-pDI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="340" y="71"/>
+            <point key="canvasLocation" x="175" y="-2542"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="grief-and-loss" width="582" height="328"/>
+    </resources>
 </document>
