@@ -9,6 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
+    @IBOutlet weak var texto1: UITextField!
+    @IBOutlet weak var texto2: UITextField!
+    @IBOutlet weak var label: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +26,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    //comment 3
+    
 
 
 }
