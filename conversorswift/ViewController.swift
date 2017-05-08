@@ -28,6 +28,16 @@ class ViewController: UIViewController {
     
     
 
+    @IBAction func calcula(_ sender: Any) {
+        
+        let numero1:Int=Int(texto1.text!)!
+        let numero2:Int=Int(texto2.text!)!
+        let total:Int=numero1+numero2
+        
+        label.text=String(total)
+        
+        
+    }
 
 }
 
